@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testimonials</title>
+<style>
+  :root {
+    --bg: #14213d;
+    --card: #1d2d50;
+    --text: #f6f3ec;
+    --muted: #b9c2d6;
+    --accent: #f2b134;
+    --line: #2f4270;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    padding: 0 16px 64px;
+  }
+  .page { max-width: 760px; margin: 0 auto; }
+
+  /* ---------- MAIN HEADING ---------- */
+  .page-title {
+    text-align: center;
+    font-size: clamp(2.2rem, 8vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding: 48px 0 8px;
+  }
+  .page-title::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 4px;
+    background: var(--accent);
+    margin: 14px auto 0;
+    border-radius: 2px;
+  }
+
+  /* ---------- SECTION (copy a whole <section> to add a new heading) ---------- */
+  .section { margin-top: 44px; }
+  .section-title {
+    font-size: clamp(1.4rem, 5vw, 1.9rem);
+    border-left: 5px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 20px;
+  }
+
+  /* ---------- VIDEO CARD (copy one <article class="video-card"> to add a video) ---------- */
+  .video-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .video-card video {
+    display: block;
+    width: 100%;
+    max-height: 70vh;
+    background: #000;
+  }
+  .video-info { padding: 14px 16px 18px; }
+  .video-info h3 { font-size: 1.15rem; }
+  .video-info .role { color: var(--accent); font-size: 0.92rem; margin-bottom: 6px; }
+  .video-info .review { color: var(--muted); font-size: 1rem; }
+
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1 class="page-title">Testimonials</h1>
+
+  <!-- =====================================================
+       SECTION START  (copy from here ...
+       ===================================================== -->
+  <section class="section">
+    <h2 class="section-title">Universal Membership</h2>
+
+    <!-- ===== VIDEO START (copy from here ...) ===== -->
+    <article class="video-card">
+      <video controls preload="metadata" playsinline>
+        <source src="vd1.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <div class="video-info">
+        <h3>Member Name</h3>
+        <p class="role">Universal Member</p>
+        <p class="review">Write the member's review here.</p>
+      </div>
+    </article>
+    <!-- ===== VIDEO END (... to here) ===== -->
+
+    <!-- Paste the next video block here. Change vd1.mp4 to vd2.mp4, then the name and review. -->
+
+  </section>
+  <!-- =====================================================
+       ... to here) SECTION END
+       ===================================================== -->
+
+  <!-- Paste a whole new SECTION here for a new heading (e.g. Coaches). -->
+
+</div>
+</body>
+</html>
